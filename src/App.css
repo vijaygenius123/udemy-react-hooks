@@ -1,38 +1,93 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Economica|Roboto+Condensed');
+
+body {
+  margin: 5%;
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5 {
+  font-family: 'Economica', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+  height: 25px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  width: 300px;
+  height: 19px;
+  font-size: 16px;
+  margin: 1px;
+}
+
+.form > input {
+  float: left;
+}
+
+.form > button {
+  float: right;
+  margin: 1px;
+}
+
+button {
+  height: 25px;
+}
+
+.Gallery {
+  margin: 10px;
+}
+
+.Gallery > img {
+  width: 400px;
+  height: 250px;
+  z-index: -1;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.multiform {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.multiform > div > input {
+  width: 40px;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.multiform > div {
+  float: left;
+}
+
+.task-list {
+  cursor: pointer;
+}
+
+.completed-list {
+  color: grey;
+}
+
+.delete-task {
+  color: black;
+  cursor: pointer;
+}
+
+.Stories > div {
+  margin: 15px;
+}
+
+.Matrix > img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.Jobs {
+  text-align: left;
 }
