@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Joke from "./Joke";
 
 function App() {
   const [userQuery, setUserQuery] = useState("");
@@ -32,6 +33,8 @@ function App() {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
+
+      <Joke />
     </div>
   );
 }
